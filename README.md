@@ -28,5 +28,3 @@ npm run build    # static export into ./out
 Pushing to `main` triggers the GitHub Actions workflow in
 `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages.
 
-> One-time setup: in the repo, go to **Settings → Pages → Build and deployment →
-> Source** and select **GitHub Actions**.
