@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUR NAME — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Share+Tech+Mono&family=Raleway:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scrollProgress"></div>
+
+  <!-- Sand Canvas -->
+  <canvas id="sandCanvas"></canvas>
+
+  <!-- Cursor Glow -->
+  <div id="cursorGlow"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-sigil">◈</span>
+        <span class="nav-wordmark">ARRAKIS.DEV</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">ABOUT</a></li>
+      <li><a href="#skills" class="mob-link">SKILLS</a></li>
+      <li><a href="#projects" class="mob-link">PROJECTS</a></li>
+      <li><a href="#contact" class="mob-link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="hero">
+
+    <!-- Star field (CSS + JS) -->
+    <div class="starfield" id="starfield"></div>
+
+    <!-- Warm sun glow -->
+    <div class="sun-glow"></div>
+
+    <div class="hero-inner">
+
+      <!-- Letter-art frame -->
+      <div class="hero-frame" id="heroFrame">
+        <div class="frame-row frame-top">
+          <span class="fc">╔</span>
+          <span class="fl">══════════════════════════════════════════════════════</span>
+          <span class="fc">╗</span>
+        </div>
+
+        <div class="frame-row frame-mid">
+          <span class="fb">║</span>
+          <div class="hero-center">
+            <p class="hero-eyebrow">// &nbsp; A R R A K I S &nbsp; · &nbsp; D U N E &nbsp; · &nbsp; D E S E R T &nbsp; P L A N E T &nbsp; //</p>
+            <h1 class="hero-name">YOUR<br>NAME</h1>
+            <p class="hero-role">
+              <span class="role-bracket">[ </span>
+              <span id="typewriter"></span><span class="caret">▌</span>
+              <span class="role-bracket"> ]</span>
+            </p>
+          </div>
+          <span class="fb">║</span>
+        </div>
+
+        <div class="frame-row frame-bot">
+          <span class="fc">╚</span>
+          <span class="fl">══════════════════════════════════════════════════════</span>
+          <span class="fc">╝</span>
+        </div>
+      </div>
+
+      <!-- Tags + CTA -->
+      <div class="hero-sub">
+        <div class="hero-tags">
+          <span class="htag">DEVELOPER</span>
+          <span class="hdot">·</span>
+          <span class="htag">DESIGNER</span>
+          <span class="hdot">·</span>
+          <span class="htag">CREATOR</span>
+        </div>
+        <a href="#about" class="hero-cta">
+          DESCEND INTO THE DUNES
+          <span class="cta-arr">▾</span>
+        </a>
+      </div>
+
+    </div><!-- /hero-inner -->
+
+    <!-- Dune Silhouette -->
+    <div class="dune-scape">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" preserveAspectRatio="none">
+        <path d="M0,90 C180,20 360,160 540,90 C720,20 900,140 1080,70 C1260,10 1380,110 1440,90 L1440,220 L0,220 Z"
+              fill="#1a1208"/>
+        <path d="M0,130 C240,70 480,170 720,110 C960,50 1200,150 1440,130 L1440,220 L0,220 Z"
+              fill="#0d0b08" opacity="0.85"/>
+        <path d="M0,160 C360,110 720,190 1080,150 C1260,120 1380,170 1440,160 L1440,220 L0,220 Z"
+              fill="#070503"/>
+      </svg>
+    </div>
+
+  </section><!-- /hero -->
+
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <div class="band" id="about">
+    <section>
+
+      <div class="sec-head fade-in">
+        <pre class="sec-label">  ┌────────────────────────────────────────────┐
+  │  ░░░  A B O U T   T H E   W A L K E R  ░░░  │
+  └────────────────────────────────────────────┘</pre>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-portrait fade-in">
+          <div class="portrait-wrap">
+            <div class="portrait-box">
+              <pre class="portrait-art">
+  ┌─────────────────┐
+  │                 │
+  │    ◉       ◉    │
+  │        △        │
+  │    ╰─────────╯  │
+  │                 │
+  │  [ YOUR PHOTO ] │
+  │                 │
+  └─────────────────┘</pre>
+            </div>
+          </div>
+          <div class="portrait-caption-art">
+            <pre>  ◈ ─────────── ◈</pre>
+          </div>
+        </div>
+
+        <div class="about-body">
+          <h2 class="about-h2 fade-in">The Desert Walker</h2>
+
+          <blockquote class="dune-quote fade-in">
+            <p>"I must not fear. Fear is the mind-killer.<br>
+               Fear is the little-death that brings total obliteration."</p>
+            <cite>— Frank Herbert, Dune</cite>
+          </blockquote>
+
+          <p class="about-p fade-in">
+            I am a <strong>[developer / designer / maker]</strong> who builds digital experiences
+            from the raw materials of code and creativity. Like the Fremen of Arrakis, I thrive
+            in demanding environments and find beauty in the details others overlook.
+          </p>
+          <p class="about-p fade-in">
+            My work blends precision engineering with creative vision — crafting things that are
+            both functional and alive. Replace this paragraph with your real story and what
+            drives you to create.
+          </p>
+
+          <div class="about-stats fade-in">
+            <div class="stat-block">
+              <span class="stat-val">∞</span>
+              <span class="stat-lbl">LINES WRITTEN</span>
+            </div>
+            <span class="stat-sep">│</span>
+            <div class="stat-block">
+              <span class="stat-val">42+</span>
+              <span class="stat-lbl">PROJECTS</span>
+            </div>
+            <span class="stat-sep">│</span>
+            <div class="stat-block">
+              <span class="stat-val">5 YRS</span>
+              <span class="stat-lbl">EXPERIENCE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════════ -->
+  <div class="band dark" id="skills">
+    <section>
+
+      <div class="sec-head fade-in">
+        <pre class="sec-label">  ┌────────────────────────────────────────────┐
+  │  ░░░  S K I L L S  &amp;  A R S E N A L  ░░░   │
+  └────────────────────────────────────────────┘</pre>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+
+        <div class="skill-group fade-in">
+          <h3 class="sg-title">▶ FRONTEND</h3>
+          <div class="skill-list">
+            <div class="skill-row"><div class="si"><span>HTML / CSS</span><span>95%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="95"></div></div></div>
+            <div class="skill-row"><div class="si"><span>JavaScript</span><span>90%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="90"></div></div></div>
+            <div class="skill-row"><div class="si"><span>React / Next.js</span><span>85%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="85"></div></div></div>
+            <div class="skill-row"><div class="si"><span>TypeScript</span><span>80%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="80"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="sg-title">▶ BACKEND</h3>
+          <div class="skill-list">
+            <div class="skill-row"><div class="si"><span>Node.js</span><span>80%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="80"></div></div></div>
+            <div class="skill-row"><div class="si"><span>Python</span><span>75%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="75"></div></div></div>
+            <div class="skill-row"><div class="si"><span>SQL / PostgreSQL</span><span>85%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="85"></div></div></div>
+            <div class="skill-row"><div class="si"><span>REST APIs</span><span>88%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="88"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <h3 class="sg-title">▶ TOOLS &amp; OTHER</h3>
+          <div class="skill-list">
+            <div class="skill-row"><div class="si"><span>Git / GitHub</span><span>92%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="92"></div></div></div>
+            <div class="skill-row"><div class="si"><span>Docker</span><span>70%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="70"></div></div></div>
+            <div class="skill-row"><div class="si"><span>UI / UX Design</span><span>78%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="78"></div></div></div>
+            <div class="skill-row"><div class="si"><span>Cloud (AWS / GCP)</span><span>65%</span></div>
+              <div class="sk-track"><div class="sk-bar" data-w="65"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════════ -->
+  <div class="band" id="projects">
+    <section>
+
+      <div class="sec-head fade-in">
+        <pre class="sec-label">  ┌────────────────────────────────────────────┐
+  │  ░░░  T H E   W O R K S  ░░░              │
+  └────────────────────────────────────────────┘</pre>
+      </div>
+
+      <div class="proj-grid">
+
+        <div class="proj-card fade-in">
+          <div class="pc-tag">[ WEB APPLICATION ]</div>
+          <h3 class="pc-title">Project Arrakis</h3>
+          <p class="pc-desc">A full-stack web application built with modern technologies. Describe the problem it solves and what makes it remarkable. Replace this with your real project details.</p>
+          <div class="pc-tech">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="pc-links">
+            <a href="#" class="pl">[ LIVE DEMO ]</a>
+            <a href="#" class="pl">[ SOURCE ]</a>
+          </div>
+        </div>
+
+        <div class="proj-card featured fade-in">
+          <div class="pc-tag">[ FEATURED ]</div>
+          <h3 class="pc-title">The Sietch Network</h3>
+          <p class="pc-desc">Your crown jewel — the project you're most proud of. Demonstrate your best skills and problem-solving here. Built to endure the harshest production demands.</p>
+          <div class="pc-tech">
+            <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Stripe</span>
+          </div>
+          <div class="pc-links">
+            <a href="#" class="pl">[ LIVE DEMO ]</a>
+            <a href="#" class="pl">[ SOURCE ]</a>
+          </div>
+        </div>
+
+        <div class="proj-card fade-in">
+          <div class="pc-tag">[ MOBILE APP ]</div>
+          <h3 class="pc-title">Stillsuit OS</h3>
+          <p class="pc-desc">A mobile-first application designed for seamless cross-platform use. Built with performance and user experience at the forefront of every decision.</p>
+          <div class="pc-tech">
+            <span>React Native</span><span>Firebase</span><span>Redux</span>
+          </div>
+          <div class="pc-links">
+            <a href="#" class="pl">[ LIVE DEMO ]</a>
+            <a href="#" class="pl">[ SOURCE ]</a>
+          </div>
+        </div>
+
+        <div class="proj-card fade-in">
+          <div class="pc-tag">[ AI / ML ]</div>
+          <h3 class="pc-title">Prescience Engine</h3>
+          <p class="pc-desc">A machine-learning model that uncovers hidden patterns in data. Like the Kwisatz Haderach, it perceives what others cannot. Built with Python and TensorFlow.</p>
+          <div class="pc-tech">
+            <span>Python</span><span>TensorFlow</span><span>FastAPI</span>
+          </div>
+          <div class="pc-links">
+            <a href="#" class="pl">[ LIVE DEMO ]</a>
+            <a href="#" class="pl">[ SOURCE ]</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <div class="band dark" id="contact">
+    <section>
+
+      <div class="sec-head fade-in">
+        <pre class="sec-label">  ┌────────────────────────────────────────────┐
+  │  ░░░  S E N D   A   S I G N A L  ░░░     │
+  └────────────────────────────────────────────┘</pre>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info fade-in">
+          <h2 class="ci-h2">Cross The Desert.<br>Start A Conversation.</h2>
+          <p class="ci-p">Whether you have a project in mind, a question to ask, or simply want to connect — I'm listening. Even in the most desolate places, the right signal finds its way.</p>
+
+          <div class="ci-links">
+            <a href="mailto:you@email.com" class="ci-item">
+              <span class="ci-icon">◈</span>
+              <span class="ci-meta">
+                <span class="ci-lbl">EMAIL</span>
+                <span class="ci-val">you@email.com</span>
+              </span>
+            </a>
+            <a href="https://github.com/yourname" target="_blank" rel="noopener" class="ci-item">
+              <span class="ci-icon">◈</span>
+              <span class="ci-meta">
+                <span class="ci-lbl">GITHUB</span>
+                <span class="ci-val">github.com/yourname</span>
+              </span>
+            </a>
+            <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener" class="ci-item">
+              <span class="ci-icon">◈</span>
+              <span class="ci-meta">
+                <span class="ci-lbl">LINKEDIN</span>
+                <span class="ci-val">linkedin.com/in/yourname</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm">
+          <div class="fg">
+            <label class="fl-label">[ NAME ]</label>
+            <input type="text" class="fi" placeholder="Your name, desert walker" required>
+          </div>
+          <div class="fg">
+            <label class="fl-label">[ EMAIL ]</label>
+            <input type="email" class="fi" placeholder="your@signal.com" required>
+          </div>
+          <div class="fg">
+            <label class="fl-label">[ MESSAGE ]</label>
+            <textarea class="fi fi-ta" rows="5" placeholder="What brings you across the dunes?" required></textarea>
+          </div>
+          <button type="submit" class="send-btn" id="sendBtn">
+            <span class="sb-text">TRANSMIT MESSAGE</span>
+            <span class="sb-icon">◈</span>
+          </button>
+        </form>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="foot-inner">
+      <pre class="foot-quote fade-in">
+╔══════════════════════════════════════════════════════════════════════════╗
+║  "THE MYSTERY OF LIFE ISN'T A PROBLEM TO SOLVE,                        ║
+║   BUT A REALITY TO EXPERIENCE."                                         ║
+║                                           — FRANK HERBERT, DUNE        ║
+╚══════════════════════════════════════════════════════════════════════════╝</pre>
+      <div class="foot-bar">
+        <span class="foot-sig">◈  CRAFTED IN THE DUNES OF ARRAKIS  ◈</span>
+        <span class="foot-yr">MMXXVI</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
