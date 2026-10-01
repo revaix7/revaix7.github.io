@@ -120,11 +120,10 @@
   if (!el) return;
 
   const roles = [
-    'Full-Stack Developer',
-    'Creative Technologist',
-    'UI / UX Designer',
-    'Desert Architect',
-    'Problem Solver',
+    'Software Engineering Student',
+    'Web Developer',
+    'Game Builder',
+    'Coding Instructor',
   ];
 
   let ri = 0, ci = 0, deleting = false;
@@ -320,7 +319,7 @@
 
 
 /* ──────────────────────────────────────────
-   CONTACT FORM  (mock submission)
+   CONTACT FORM  (opens the visitor's email app)
 ────────────────────────────────────────── */
 (function initContactForm() {
   const form = document.getElementById('contactForm');
@@ -329,6 +328,14 @@
 
   form.addEventListener('submit', e => {
     e.preventDefault();
+    const name  = document.getElementById('cfName').value;
+    const email = document.getElementById('cfEmail').value;
+    const msg   = document.getElementById('cfMsg').value;
+    window.location.href = 'mailto:xmala086@uottawa.ca'
+      + '?subject=' + encodeURIComponent('Portfolio message from ' + name)
+      + '&body=' + encodeURIComponent(msg + '
+
+— ' + name + ' (' + email + ')');
     const txt = btn.querySelector('.sb-text');
     txt.textContent = '[ SIGNAL SENT  ◈ ]';
     btn.classList.add('sent');
