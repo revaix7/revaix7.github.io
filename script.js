@@ -337,11 +337,11 @@
 
 — ' + name + ' (' + email + ')');
     const txt = btn.querySelector('.sb-text');
-    txt.textContent = '[ SIGNAL SENT  ◈ ]';
+    txt.textContent = '[ OPENING EMAIL  ◈ ]';
     btn.classList.add('sent');
     btn.disabled = true;
     setTimeout(() => {
-      txt.textContent = 'TRANSMIT MESSAGE';
+      txt.textContent = 'SEND MESSAGE';
       btn.classList.remove('sent');
       btn.disabled = false;
       form.reset();
