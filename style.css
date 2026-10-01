@@ -475,44 +475,12 @@ pre { white-space: pre; }
 ═══════════════════════════════════════════ */
 .about-grid {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 1fr;
+  max-width: 760px;
   gap: 4rem;
   align-items: start;
 }
 
-/* Portrait */
-.about-portrait { display: flex; flex-direction: column; align-items: center; gap: .75rem; }
-.portrait-wrap {
-  position: relative;
-  width: 100%;
-}
-.portrait-box {
-  border: 1px solid rgba(196,150,60,.2);
-  padding: 1.25rem;
-  background: rgba(26,18,8,.7);
-  position: relative;
-}
-.portrait-box::before {
-  content: '';
-  position: absolute;
-  top: -5px; left: -5px;
-  right: 5px; bottom: 5px;
-  border: 1px solid rgba(196,150,60,.1);
-  pointer-events: none;
-}
-.portrait-art {
-  font-family: var(--f-mono);
-  font-size: .78rem;
-  line-height: 1.55;
-  color: var(--sand-dk);
-}
-.portrait-caption-art {
-  font-family: var(--f-mono);
-  font-size: .75rem;
-  color: var(--dune-md);
-}
-
-/* Body */
 .about-h2 {
   font-family: var(--f-display);
   font-size: 2.4rem;
@@ -967,7 +935,6 @@ pre { white-space: pre; }
 @media (max-width: 900px) {
   .skills-grid { grid-template-columns: 1fr; }
   .about-grid  { grid-template-columns: 1fr; }
-  .about-portrait { align-items: flex-start; }
 
   .proj-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
