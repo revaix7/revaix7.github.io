@@ -391,6 +391,12 @@ pre { white-space: pre; }
 .hdot { color: var(--dune-md); font-family: var(--f-mono); }
 
 /* ── CTA ── */
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .hero-cta {
   display: inline-flex;
   align-items: center;

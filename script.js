@@ -333,9 +333,7 @@
     const msg   = document.getElementById('cfMsg').value;
     window.location.href = 'mailto:xmala086@uottawa.ca'
       + '?subject=' + encodeURIComponent('Portfolio message from ' + name)
-      + '&body=' + encodeURIComponent(msg + '
-
-— ' + name + ' (' + email + ')');
+      + '&body=' + encodeURIComponent(msg + '\n\n— ' + name + ' (' + email + ')');
     const txt = btn.querySelector('.sb-text');
     txt.textContent = '[ OPENING EMAIL  ◈ ]';
     btn.classList.add('sent');
