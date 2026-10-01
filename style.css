@@ -586,7 +586,7 @@ pre { white-space: pre; }
 ═══════════════════════════════════════════ */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -634,6 +634,40 @@ pre { white-space: pre; }
   background: linear-gradient(90deg, var(--dune-md), var(--spice-hot));
   box-shadow: 0 0 8px var(--spice-glow);
   transition: width 1.4s cubic-bezier(.1,.8,.2,1);
+}
+
+
+/* ═══════════════════════════════════════════
+   EXPERIENCE
+═══════════════════════════════════════════ */
+.exp-list { display: grid; gap: 1.25rem; }
+.exp-meta {
+  font-family: var(--f-mono);
+  font-size: .75rem;
+  letter-spacing: .04em;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+}
+.exp-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.exp-points li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: .88rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+.exp-points li::before {
+  content: '◈';
+  position: absolute;
+  left: 0;
+  top: .2rem;
+  font-size: .7rem;
+  color: var(--spice);
 }
 
 

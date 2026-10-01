@@ -121,9 +121,9 @@
 
   const roles = [
     'Software Engineering Student',
-    'Web Developer',
-    'Game Builder',
-    'Coding Instructor',
+    'Full-Stack Web Developer',
+    'STEM & Cybersecurity Instructor',
+    'Bilingual · English / French',
   ];
 
   let ri = 0, ci = 0, deleting = false;
